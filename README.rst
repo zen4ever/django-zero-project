@@ -10,4 +10,4 @@ Template for django-startproject built according to my personal preferences
 
     git clone git://github.com/zen4ever/django_zero_project
 
-    django-startproject.py --template-dir=django_zero_project yourprojectname
+    django-startproject.py --template-dir=django-zero-project yourprojectname
