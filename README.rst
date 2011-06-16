@@ -2,7 +2,10 @@ Django Zero Project
 ===================
 
 
-Template for django-startproject built according to my personal preferences
+A set of templates for django-startproject 
+
+Install
+-------
 
 ::
 
@@ -10,4 +13,19 @@ Template for django-startproject built according to my personal preferences
 
     git clone git://github.com/zen4ever/django-zero-project.git
 
-    django-startproject.py --template-dir=django-zero-project yourprojectname
+Usage
+-----
+
+::
+
+    django-startproject.py --template-dir=django-zero-project/templatename yourprojectname
+
+Replace **templatename** and **yourprojectname** with proper values
+
+
+Templates
+---------
+
+ - zero_template - minimal django template, includes basic *sass* project, WSGI
+   script to use with gunicorn or other WSGI server, folders in settings.py are
+   independent of the actual absolute path of the project.
