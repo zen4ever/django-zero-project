@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load applicationcontent_tags %}
+{% load feincms_tags %}
+{% load feincms_page_tags %}
+
+{% block title %}
+  {{ feincms_page.title }}
+{% endblock %}
+
+{% block page_title %}
+  {{ feincms_page.title }}
+{% endblock %}
+
+{% block content %}
+  {% feincms_frontend_editing feincms_page request %}
+  {% feincms_render_region feincms_page "main" request %}
+{% endblock %}
+
+{% block sidebar %}
+  {% feincms_render_region feincms_page "sidebar" request %}
+{% endblock %}
+
+{% block navbar %}
+  {% feincms_render_region feincms_page "navbar" request %}
+{% endblock %}
